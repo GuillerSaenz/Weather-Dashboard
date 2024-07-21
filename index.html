@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Day Forecast</title>
+    <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+</head>
+<body>
+    <header class = "p-3 mb-2 bg-primary text-white">
+        <h1>Weather Dashboard</h1>
+    </header>
+    <main>
+        <div class = "row">
+            <div class = "col-3">
+                <h2>Search for a City:</h2>
+                <div>
+                    <input id = "city"></input>
+                    <a class = "btn btn-info" onclick="getInfo()">Search</a>
+                    <div id = "searched-cities"></div>
+                </div>
+            </div>
+            <div class = "col-9">
+                <div class = "today">
+                    <h2 id = "city-name">
+                        <strong>Waiting... </strong>
+                    </h2>
+                    <p class = "temp" id = "day1-temp">Temp: </p>
+                    <p class = "wind" id = "day1-wind">Wind: </p>
+                    <p class = "humidity" id = "day1-humidity">Humidity: </p>
+                </div>
+                <div class = "five-day">
+                    <section id = "day">
+                        <h4>
+                            <strong>5 Day Forecast:</strong>
+                        </h4>
+                    </section>
+                    <div class = "next-days">
+                        <p class = "weather" id = "day2"><strong>Waiting...</strong></p>
+                        <p class = "temp" id = "day2-temp">Temp: </p>
+                        <p class = "wind" id = "day2-wind">Wind: </p>
+                        <p class = "humidity" id = "day2-humidity">Humidity: </p>
+                    </div>
+                    <div class = "next-days">
+                        <p class = "weather" id = "day3"><strong>Waiting...</strong></p>
+                        <p class = "temp" id = "day3-temp">Temp: </p>
+                        <p class = "wind" id = "day3-wind">Wind: </p>
+                        <p class = "humidity" id = "day3-humidity">Humidity: </p>
+                    </div>
+                    <div class = "next-days">
+                        <p class = "weather" id = "day4"><strong>Waiting...</strong></p>
+                        <p class = "temp" id = "day4-temp">Temp: </p>
+                        <p class = "wind" id = "day4-wind">Wind: </p>
+                        <p class = "humidity" id = "day4-humidity">Humidity: </p>
+                    </div>
+                    <div class = "next-days">
+                        <p class = "weather" id = "day5"><strong>Waiting...</strong></p>
+                        <p class = "temp" id = "day5-temp">Temp: </p>
+                        <p class = "wind" id = "day5-wind">Wind: </p>
+                        <p class = "humidity" id = "day5-humidity">Humidity: </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+.today {
+    box-sizing: border-box;
+    width: 900px;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 5px;
+  }
+
+#day {
+    margin-top: 15px;
+}
+
+.next-days {
+    display: inline-block;
+    height: 200px;
+    width: 190px;
+    margin: 10px;
+}
+
+.next-days {
+    background-color: rgb(23, 57, 58);
+    color:rgb(255, 255, 255);
+}
